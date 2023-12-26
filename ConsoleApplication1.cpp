@@ -27,8 +27,9 @@ public:
 		{
 			speed_x *= -1;
 		}
-	}
+	};
 };
+
 
 class Paddle {
 public:
@@ -53,16 +54,16 @@ int main()
 	InitWindow(screen_width, screen_height, "PongTacular");
 
 	ball.radius = 20;
-	ball.x + screen_width / 2;
+	ball.x = screen_width / 2;
 	ball.y = screen_height / 2;
-	ball.speed_x = 14;
-	ball.speed_y = 14;
+	ball.speed_x = 7;
+	ball.speed_y = 7;
 
 	player.width = 25;
 	player.height = 120;
 	player.x = screen_width - player.width - 10;
 	player.y = screen_height / 2 - player.height / 2;
-	player.speed = 14;
+	player.speed = 6;
 
 	while (WindowShouldClose() == false) {
 		BeginDrawing();
@@ -70,11 +71,14 @@ int main()
 		ball.Update();
 
 		ClearBackground(BLACK);
-		DrawRectangle(10, screen_height / 2 - 60, 25, 120, BLUE);
+		DrawLine(screen_width / 2, 0, screen_width / 2, screen_height, GREEN);
 		ball.Draw();
+		DrawRectangle(10, screen_height / 2 - 60, 25, 120, BLUE);
 		DrawRectangle(screen_width - 35, screen_height / 2 - 60, 25, 120, BLUE);
 		DrawLine(screen_width / 2, 0, screen_width / 2, screen_height, GREEN);
 		DrawFPS(10, 10);
+		player.Draw();
+
 		EndDrawing();
 
 	}
