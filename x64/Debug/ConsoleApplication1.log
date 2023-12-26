@@ -2,8 +2,6 @@
 C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(15,20): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(15,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
 C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(15,14): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(22,58): warning C4390: ';': empty controlled statement found; is this the intent?
-C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(26,57): warning C4390: ';': empty controlled statement found; is this the intent?
 C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(41,30): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
 C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(41,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
 C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(41,20): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
