@@ -60,47 +60,73 @@ public:
 	}
 };
 
-Ball ball;
-Paddle player;
-
-int main()
+class CPUPaddle : public Paddle
 {
-	cout << "Starting the game" << endl;
-	const int screen_width = 1280;
-	const int screen_height = 800;
-	InitWindow(screen_width, screen_height, "PongTacular");
-	SetTargetFPS(165);
+public:
+	void Update(int ball_y)
+	{
+		if (y + height / 2 > ball_y)
+		{
+			y = y - speed;
+		}
+		if (y + height / 2 <= ball_y)
+		{
+			y = y + speed;
+		}
 
-	ball.radius = 20;
-	ball.x = screen_width / 2;
-	ball.y = screen_height / 2;
-	ball.speed_x = 14;
-	ball.speed_y = 14;
+	};
+};
 
-	player.width = 25;
-	player.height = 120;
-	player.x = screen_width - player.width - 10;
-	player.y = screen_height / 2 - player.height / 2;
-	player.speed = 10;
+	Ball ball;
+	Paddle player;
+	CPUPaddle cpu;
 
-	while (WindowShouldClose() == false) {
-		BeginDrawing();
+	int main()
+	{
+		cout << "Starting the game" << endl;
+		const int screen_width = 1280;
+		const int screen_height = 800;
+		InitWindow(screen_width, screen_height, "PongTacular");
+		SetTargetFPS(165);
 
-		ball.Update();
-		player.Update();
+		ball.radius = 20;
+		ball.x = screen_width / 2;
+		ball.y = screen_height / 2;
+		ball.speed_x = 14;
+		ball.speed_y = 14;
 
-		ClearBackground(BLACK);
-		DrawLine(screen_width / 2, 0, screen_width / 2, screen_height, GREEN);
-		ball.Draw();
-		DrawRectangle(10, screen_height / 2 - 60, 25, 120, BLUE);
-		DrawFPS(10, 10);
-		player.Draw();
+		player.width = 25;
+		player.height = 120;
+		player.x = screen_width - player.width - 10;;
+		player.y = screen_height / 2 - player.height / 2;
+		player.speed = 10;
 
-		EndDrawing();
+		cpu.width = 25;
+		cpu.height = 120;
+		cpu.x = 10;
+		cpu.y = screen_height / 2 - cpu.height / 2;
+		cpu.speed = 10;
+		
 
-	}
+		while (WindowShouldClose() == false) {
+			BeginDrawing();
 
-	CloseWindow();
-	return 0;
+			ball.Update();
+			player.Update();
+			cpu.Update(ball.y);
+
+			ClearBackground(BLACK);
+			DrawLine(screen_width / 2, 0, screen_width / 2, screen_height, GREEN);
+			ball.Draw();
+			cpu.Draw();
+			DrawFPS(10, 10);
+			player.Draw();
+
+			EndDrawing();
+
+		}
+
+		CloseWindow();
+		return 0;
 
 }

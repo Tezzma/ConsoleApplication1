@@ -6,6 +6,7 @@ C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(41,30)
 C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(41,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
 C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(41,20): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
 C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(41,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(116,19): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
   ConsoleApplication1.vcxproj -> C:\Users\Nicolas\source\repos\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.
