@@ -40,6 +40,24 @@ public:
 	void Draw() {
 		DrawRectangle(x, y, width, height, BLUE);
 	}
+	void Update() {
+		if (IsKeyDown(KEY_W))
+		{
+			y = y - speed;
+		}
+		if (IsKeyDown(KEY_S))
+		{
+			y = y + speed;
+		}
+		if (y <= 0)
+		{
+			y = 0;
+		}
+		if (y + height >= GetScreenHeight())
+		{
+			y = GetScreenHeight() - height;
+		}
+	}
 };
 
 Ball ball;
@@ -51,6 +69,7 @@ int main()
 	const int screen_width = 1280;
 	const int screen_height = 800;
 	InitWindow(screen_width, screen_height, "PongTacular");
+	SetTargetFPS(165);
 
 	ball.radius = 20;
 	ball.x = screen_width / 2;
@@ -68,13 +87,12 @@ int main()
 		BeginDrawing();
 
 		ball.Update();
+		player.Update();
 
 		ClearBackground(BLACK);
 		DrawLine(screen_width / 2, 0, screen_width / 2, screen_height, GREEN);
 		ball.Draw();
 		DrawRectangle(10, screen_height / 2 - 60, 25, 120, BLUE);
-		DrawRectangle(screen_width - 35, screen_height / 2 - 60, 25, 120, BLUE);
-		DrawLine(screen_width / 2, 0, screen_width / 2, screen_height, GREEN);
 		DrawFPS(10, 10);
 		player.Draw();
 
