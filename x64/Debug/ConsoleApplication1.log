@@ -1,12 +1,13 @@
 ﻿  ConsoleApplication1.cpp
-C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(15,20): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(15,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(15,14): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(41,30): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(41,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(41,20): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(41,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(116,19): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(21,20): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(21,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(21,14): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(45,26): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(46,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(80,56): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(151,19): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(153,63): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Nicolas\source\repos\ConsoleApplication1\ConsoleApplication1.cpp(157,61): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   ConsoleApplication1.vcxproj -> C:\Users\Nicolas\source\repos\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.
